@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="assets-container">
+            <p>Assets</p>
+            <div class="assets">
+                <div class="asset-box">
+                    <img src="./pexels-pixabay-162140 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+                <div class="asset-box">
+                    <img src="./pexels-tetyana-kovyrina-1692984 (1).jpg" alt="">
+                </div>
+            </div>
+            <div class="asset-add-buttons">
+                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
+                <i class="fa fa-th" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="video-format">
+                <a href="./index.html"><i class="fa fa-angle-left"></i> &nbsp;Back</a>
+                <button><i class="fa fa-crop" aria-hidden="true"></i></button>
+                <button><i class="fa fa-mouse-pointer" aria-hidden="true"></i></button>
+                <button><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
+                <button class="size">50%</button>
+                <div class="export-button">
+                    <button><i class="fa fa-upload" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="video-frame">
+                <img src="./pexels-tobias-bjørkli-2236382@2x.png" alt="">
+            </div>
+        </div>
+        <div class="properties-container">
+            <div class="properties-wrapper">
+                <h4>Properties Settings</h4>
+                <p>Size</p>
+                <div class="property-box">
+                    <p>Original</p>
+                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                </div>
+                <p>Background</p>
+                <div class=" background-box">
+                    <div class="bg-box">
+                        <div>
+                            <input type="radio" checked name="bg">
+                            <label for="">Background</label>
+                        </div>
+
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <div class="bg-box">
+                        <div>
+                            <input type="radio" name="bg">
+                            <label for="">Image</label>
+                        </div>
+
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                        <!-- <input type="image"> -->
+                    </div>
+                </div>
+                <p>Audio</p>
+                <div class="property-box">
+                    <div>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>Clean Audio</p>
+                        <p>Remove bg noise</p>
+                    </div>
+                    <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                </div>
+                <p>Duration</p>
+                <div class="property-box">
+                    <p>10:10</p>
+                    <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="play-controller">
+        <p><i class="fa fa-undo" aria-hidden="true"></i></p>
+        <p><i class="fa fa-repeat" aria-hidden="true"></i></p>
+        <p><i class="fa fa-scissors" aria-hidden="true"></i> Split</p>
+        <p><i class="fa fa-plus-circle" aria-hidden="true"></i> add media</p>
+        <p><i class="fa fa-microphone" aria-hidden="true"></i> add voiceover</p>
+        <p><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp; <i class="fa fa-search-minus"
+                aria-hidden="true"></i></p>
+        <div class="sound-bar">
+            <input type="range" name="" id="">
+        </div>
+        <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
+        <p><i class="fa fa-backward" aria-hidden="true"></i></p>
+        <p><i class="fa fa-play-circle" aria-hidden="true"></i></p>
+        <p><i class="fa fa-forward" aria-hidden="true"></i></p>
+        <div class="duration-time">
+            <div class="duration-roller"></div>
+        </div>
+        00:00/00:00
+    </div>
+    <div class="editor-controll-panel">
+        <div class="selector-track"></div>
+        <div class="scale-base">
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+        </div>
+        <div class="tracks-wrapper">
+            <div class="track track2">
+                <div class="track-name">Track 2</div>
+            </div>
+            <div class="track track1">
+                <div class="track-name">Track 1</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

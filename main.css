@@ -1,0 +1,348 @@
+@font-face {
+  font-family: Euclidcircular;
+  src: url(./euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Euclidcircular,sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #eeebeb;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*left side bar styling */
+
+.left-side{
+    width: 330px;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    padding: 15px;
+    background-color: #fff;
+}
+
+.logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-info{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px auto;
+}
+.user-logo{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(81, 216, 81);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.user-name{
+    flex: 1;
+}
+.user-info i{
+    color: gray;
+}
+.user-name h2{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.904);
+}
+.user-name p{
+    color: #5e5c5c;
+}
+
+
+.btn-new{
+    margin-top: 30px !important; 
+    background-color: rgba(57, 133, 233, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.btn-new:hover{
+    background-color: rgba(57, 133, 233, 0.575);
+}
+
+.side-bar-tab{
+    width: 100%;
+    padding: 16px 10px;
+    /* background-color: rgba(57, 133, 233, 0.897); */
+    border-radius: 9px;
+    margin: 10px auto;
+}
+.side-bar-tabs ul{
+    list-style: none;
+    color: rgb(31, 31, 31);
+    text-transform: capitalize;
+}
+.side-bar-tabs ul li:hover{
+    background-color: #d4cece;
+    cursor: pointer;
+    color: #000000;
+}
+.side-bar-tab i{
+    margin-right: 8px;
+    color: gray;
+}
+.btn-new button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-new button,.btn-new span{
+    color: #ffffffe3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right-side{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid yellow; */
+    padding: 15px 25px;
+}
+
+.header-dashboard{
+    /* border: 1px solid red; */
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-header-part{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left-header-part i{
+    font-size: 1.4rem;
+    color: grey;   
+}
+
+.search-bar{
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0px 4px 13px #0000001c;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.user-circle{
+    width: 40px;
+    height: 40px;
+    /* background-color: #000000; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-circle img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-header-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-header-part button{
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: capitalize;   
+}
+.right-header-part button > i{
+   margin-left: 5px;
+}
+
+
+.upgrade{
+    background-color: rgba(255, 166, 33, 0.233);
+}
+.upgrade > i{
+    color: orange;
+    font-size: 1rem;
+}
+
+
+.icon-big> i{
+    font-size: 1.8rem;
+    color: #030303;
+}
+
+.invite{
+    background-color: rgba(80, 88, 100, 0.205);
+}
+
+.project-functions{
+    padding: 40px 6px 10px 6px;
+}
+
+.project-functions> p{
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.action-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.action-buttons button{
+    /* width: 160px; */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fff;
+    padding: 12px 17px;
+    border-radius: 6px;
+}
+.action-buttons button > i{
+    margin-right: 8px;
+    padding: 9px;
+    /* border: 1px solid red; */
+    border-radius: 4px;
+    color: #030303;
+}
+.action-buttons button .fa-scissors{
+    background-color: rgba(179, 111, 243, 0.185);
+    color: rgb(66, 0, 121);
+}
+.action-buttons button .fa-video-camera{
+    background-color: rgba(255, 0, 0, 0.18);
+    color: red;
+}
+.action-buttons button .fa-wifi{
+    background-color: rgba(25, 152, 202, 0.18);
+    color: rgb(0, 183, 255);
+}
+.action-buttons button .fa-microphone{
+    background-color: rgba(255, 174, 0, 0.18);
+    color:rgb(255, 174, 0);
+   
+}
+.recent-video-header-line{
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent-video-header-line p{
+    font-size: 1.2rem;
+    color: #030303;
+}
+
+.recent-video-header-line button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.recent-projects{
+    margin-top: 23px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.recent-project{
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.recent-project img{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.project-time{
+    background-color: #03030381;
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+.project-label{
+    background-color: rgb(223, 161, 46);
+    padding: 5px;
+    font-size: 10px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #030303;
+}
+
+.chat-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 3px #5e5c5c;
+}
+.chat-icon span{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
