@@ -1,6 +1,6 @@
 @font-face {
     font-family: Euclidcircular;
-    src: url(./euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf);
+    src: url(../font/euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf);
 }
 *{
     margin: 0;
@@ -231,10 +231,10 @@ body{
 }
 
 .track1{
-    background-image: url(./pexels-tetyana-kovyrina-1692984\ \(1\).jpg);
+    background-image: url(../image/pexels-tetyana-kovyrina-1692984\ \(1\).jpg);
 }
 .track2{
-    background-image: url(./pexels-pixabay-162140\ \(1\).jpg);
+    background-image: url(../image/pexels-pixabay-162140\ \(1\).jpg);
 }
 
 .track-name{
